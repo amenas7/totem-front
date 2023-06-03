@@ -1,0 +1,39 @@
+<div *ngIf="isLogged">
+    Bienvenido al proyecto...
+</div>
+
+
+<div *ngIf="!isLogged">
+  <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 text-center">
+    
+          <div class="card p-2" style="margin-top: 30vh;">
+            <div class="card-body">
+              
+              <div class="mt-4 mb-5">
+                <img src="../../assets/imagenes/losportales-logo.svg" class="img-fluid" style="width: 60%;">
+              </div>
+
+              <label for="formGroupExampleInput" class="form-label" style="float: left; color: #0061A7; font-size: 28px; font-family: 'Nunito Sans', sans-serif; font-family: 'Raleway', sans-serif; margin-bottom: 60px;"> Bienvenido de nuevo a nuestra plataforma, por favor ingrese sus credenciales desde el botón inferior. </label>
+
+    
+              <div class="mt-2 mb-5">
+                <button class="btn w-100 btn_ingresar btn-lg p-4" style="font-family: 'Nunito Sans', sans-serif; font-family: 'Raleway', sans-serif; font-size: 28px; background-color: #F7B400; color: white;" (click)="ingresar()"> Ingresar <i class="fa-solid fa-unlock-keyhole"></i> </button>
+              </div>
+    
+    
+            </div>
+          </div>
+    
+        </div>
+        <div class="col-2"></div>
+        
+      </div>
+  
+    </div>
+</div>
+
+
+

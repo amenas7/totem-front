@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+:host body{
+  font-family: 'Nunito Sans', sans-serif !important; 
+}
+@import 'simple-keyboard/build/css/index.css';
+@import '~animate.css/animate.min';
+
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+
+body{
+    background-color: #F0F0F0;
+}
+
+
+
+.progress-spinner {
+    position: fixed;
+    z-index: 999999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* Transparent Overlay */
+  .progress-spinner:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+
+.p-dropdown .p-dropdown-label {
+  font-size: 2rem !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  font-size: 2rem !important;
+}
+
+
+.hg-theme-default .hg-button {
+  height: 80px;
+  font-size: 1.8rem;
+}
+
+.p-dropdown .p-dropdown-trigger {
+  color: #0061A7;
+}
+
+.p-dropdown{
+  border: 1px solid #0061A7;
+}
+
+.p-dropdown .p-dropdown-label.p-placeholder {
+  color: #0061A7;
+}
+
+.p-dropdown.p-dropdown-clearable .p-dropdown-label {
+  color: #0061A7;
+}
+
+.form-control{
+  border: 1px solid #0061A7;
+  padding: 0.85rem 0.75rem;
+}
+
+.card{
+  border: none;
+}
+
+
+.swal2-popup {
+  font-size: 1.7rem !important;
+  }
+
+// mostrar/ocultar teclado
+.hide-keyboard {
+  display: none;
+  //border: 1px solid red !important;
+}
+
+
+// .iti__flag {
+//   background-image: url("https://raw.githubusercontent.com/jackocnr/intl-tel-input/master/build/img/flags.png");
+// }
+
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+// .iti__flag {
+//     background-image: url("https://raw.githubusercontent.com/jackocnr/intl-tel-input/master/build/img/flags@2x.png");
+//   }
+// }
+
+
+.iti .iti--container{
+  max-width: 50% !important;
+}
+
+

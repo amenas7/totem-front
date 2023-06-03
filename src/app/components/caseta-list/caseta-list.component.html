@@ -1,0 +1,97 @@
+<div class="animate__animated animate__fadeIn">
+    
+    
+    <div class="container mt-4">
+        <div class="row">
+            
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+        
+                <div class="card p-3" style="margin-top: 30vh;">
+                    <div class="card-body">
+                    
+                    <div class="mt-4 mb-5">
+                        <label for="formGroupExampleInput" class="form-label" style="color: #0061A7; font-size: 2.7rem; margin-bottom: 20px; font-weight: bold;"> Seleccione una caseta <i class="fa-solid fa-location-dot"></i> </label>
+                    </div>
+
+                    <div class="mt-4 mb-5">
+
+                        <p-dropdown [style]="{'minWidth':'100%'}" [options]="casetas_array" [(ngModel)]="selectedCity" placeholder=":: Seleccionar ::" optionLabel="nombreCaseta" [showClear]="true" (onChange)="onChange()" (onClear)="onClear()" (input)="onInputChangeCaseta($event)" scrollHeight="auto"></p-dropdown>
+
+                        <!-- <p-autoComplete 
+                        [style]="{
+                            'minWidth': '100%'
+                        }" 
+                        [(ngModel)]="selectedCity" #autoItems field="getSelectedItemName" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name" [dropdown]="true" placeholder=":: Seleccionar ::" (input)="onInputChangeCaseta($event)">
+                        <ng-template let-country pTemplate="item">
+                            <div class="country-item">
+                            <div>{{country.name}}</div>
+                            </div>
+                        </ng-template>
+                        </p-autoComplete>
+
+                        <p-dropdown appendTo="body" [style]="{'minWidth':'100%'}" [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" placeholder=":: Seleccionar ::" filterValue={{valueCaseta}} scrollHeight="500px">
+                            <ng-template pTemplate="selectedItem">
+                                <div class="country-item country-item-value" *ngIf="selectedCity">
+                                    <div>{{selectedCity.name}}</div>
+                                </div>
+                            </ng-template>
+                            <ng-template let-country pTemplate="item">
+                                <div class="country-item">
+                                    <div>{{country.name}}</div>
+                                </div>
+                            </ng-template>
+                        </p-dropdown> -->
+
+                    </div>
+
+            
+                    <div class="mt-2 mb-5">
+                        <button class="btn w-100 btn_ingresar btn-lg p-4" [disabled]="bloqueado" style="font-size: 1.8rem; background-color: #F7B400; color: white;" (click)="seleccionar()" > Seleccionar  <i class="fa-solid fa-arrow-right-long fa-fade"></i> </button>
+                    </div>
+            
+            
+                    </div>
+                </div>
+        
+            </div>
+            <div class="col-2"></div>
+
+
+
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="mt-4" style="margin-top: 400px !important;">
+                <div class="simple-keyboard keyboard-texto-caseta"></div>
+            </div>
+              
+        </div>
+    </div> -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="progress-spinner" *ngIf="VerLoading">
+    <p-progressSpinner></p-progressSpinner>
+</div>
+
+
+
+
+
+

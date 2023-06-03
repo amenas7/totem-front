@@ -1,0 +1,49 @@
+
+
+
+
+::ng-deep .keyboard2 .hg-theme-default .hg-button {
+    height: 40px !important;
+    font-size: 1rem !important;
+}
+
+
+.gris{
+    color: #999;
+    border: 1px solid #999;
+    font-weight: bold;
+}
+
+.label-caseta{
+    float: left; 
+    color: #0061A7; 
+    font-size: 1.8rem; 
+    margin-bottom: 5px;
+}
+
+.input-caseta{
+    font-size: 1.9rem; 
+    background-color: white; 
+    font-weight: bold; 
+    color: #0061A7;
+}
+
+.btn-pin{
+    background-color: #702AB2; 
+    border: none; 
+    height: 56%; 
+    font-size: 1.1rem;
+}
+
+.btn-pin:active{
+    background-color: #4B1C77;
+}
+
+.form-select{
+    border: 1px solid #0061A7;
+    color: #0061A7;
+}
+
+::ng-deep .swal2-icon {
+    border-color: #fff !important;
+}

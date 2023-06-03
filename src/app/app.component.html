@@ -1,0 +1,37 @@
+<nav *ngIf="isLogged" class="navbar navbar-expand-lg navbar-dark px-0 border-bottom animate__animated animate__fadeIn" style="background-color: #F8F9FB; height: 5rem;">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" style="cursor:pointer">
+        <!-- <img src="https://preview.webpixels.io/web/img/logos/clever-light.svg" class="h-8" alt="..."> -->
+        <img (click)="inicio()" src="../assets/imagenes/losportales-logo.svg" class="ms-5 img-fluid" style="">
+      </a>
+      <!-- Navbar toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+          <!-- <a class="nav-item nav-link" href="#">Sign in</a> -->
+        </div>
+        <!-- Action -->
+        <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+          <span style="color: #0061A7; font-size: 1.7rem;" class="me-4"> Bienvenido {{ userOffice }} </span>
+
+          <a *ngIf="!isLogged" style="font-size: 1.5rem;" class="btn btn-sm btn-primary w-full w-lg-auto" (click)="login()">
+            Login
+          </a>
+          <a *ngIf="isLogged" style="font-size: 1.5rem;" class="btn btn-sm btn-danger w-full w-lg-auto" (click)="salir()">
+            Salir <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+</nav>
+
+
+
+<router-outlet></router-outlet>
+
+<div class="progress-spinner" *ngIf="VerLoading">
+  <p-progressSpinner></p-progressSpinner>
+</div>
